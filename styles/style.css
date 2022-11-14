@@ -6,6 +6,8 @@
 
 :root{
     --progress-bar: #0779e4;
+    /* --text-light-mode: #2b2b2b;
+    --text-dark-mode: #f8f8f8 ; */
     /* color:#143774;
     color:#1792d2;
     color:#f8f8f8;
@@ -13,7 +15,7 @@
     color:#8490ff; */
 
     /* dark mode */
-    /* background-color : #213343;  */
+    /* background-color : #09141d;  */
 }
 
 /* GLOBAL */
@@ -27,23 +29,22 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
+    line-height: 2rem;
 }
 
 /* TYPOGRAPHY */
+
 .progress-wrap h3{
     text-transform: uppercase;
 }
 
 /* BUTTONS */
-#to-Top{
-    position: relative;
-    right: 10px;
-}
+
 
 /* NAV */
 
 
-/* BODY */
+/* INDEX */
 .progress{
     height: .6rem;
     background: rgba(0, 0, 0, 0.05);
@@ -52,10 +53,14 @@ body{
 }
 
 .progress-bar{
-    background-color: var(--progress-bar);;
+    background-color: var(--progress-bar);
     height: .6rem;
     border-radius: 2px;
 }
 
+/* FRIENDS */
+.friends-sec-1 h1{
+    text-transform: uppercase;
+}
 
 /* MEDIA QUERIES */

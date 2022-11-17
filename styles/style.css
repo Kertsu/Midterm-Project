@@ -63,4 +63,11 @@ body{
     text-transform: uppercase;
 }
 
+/* INTERESTS */
+.interests-sec-1 img{
+    width: 100%;
+    max-width: 100%;
+}
+
+
 /* MEDIA QUERIES */

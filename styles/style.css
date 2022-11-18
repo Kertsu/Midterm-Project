@@ -6,6 +6,7 @@
 
 :root{
     --progress-bar: #0779e4;
+    --nen-scale: #cc2fef;
     /* --text-light-mode: #2b2b2b;
     --text-dark-mode: #f8f8f8 ; */
     /* color:#143774;
@@ -67,6 +68,19 @@ body{
 .interests-sec-1 img{
     width: 100%;
     max-width: 100%;
+}
+
+.nen-ability-holder{
+    height: .6rem;
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: none;
+    width: 15%;
+}
+
+.nen-ability-scale{
+    background-color: var(--nen-scale);
+    height: .6rem;
+    border-radius: 2px;
 }
 
 

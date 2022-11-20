@@ -50,7 +50,7 @@ body{
     height: .6rem;
     background: rgba(0, 0, 0, 0.05);
     box-shadow: none;
-    width: 15%;
+    width: 25%;
 }
 
 .progress-bar{
@@ -82,6 +82,24 @@ body{
     height: .6rem;
     border-radius: 2px;
 }
+
+/* AWARDS */
+.awards-sec-1{
+    position:relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/me2.jpg");
+    background: center cover;
+}
+
+.awards-sec-1 > div{
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+}
+
+.awards-sec-1 > div p:nth-child(3), h1{
+    text-transform: uppercase;    
+}
+
 
 
 /* MEDIA QUERIES */

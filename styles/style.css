@@ -105,6 +105,38 @@ ul{
     color: var(--progress-bar);
 }
 
+/* MOBILE NAV */
+.mobile-nav-a{
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    display: block;
+    font-weight: 400;
+    padding: 1.2em 0 1.2em 2em;
+    text-decoration: none;
+    font-size: .8rem;
+    overflow: hidden;
+}
+.menu-div{
+    height: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: black;
+    position: fixed;
+    height: 100%;
+    opacity: .8;
+    overflow-x: hidden;
+    width: 0;
+    padding-top: 1px;
+    transition: all .7s;
+}
+
+.menu-div.animate{
+    width: 260px;
+}
+
 /* NAV */
 .container-nav{
     display: flex;
@@ -193,6 +225,20 @@ ul{
 
 .btn-bars.close .btn-line:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* DIM */
+.mobile-body-dim{
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    bottom: 0;
+    left:0;
+    display: none;
 }
 
 /* INDEX */

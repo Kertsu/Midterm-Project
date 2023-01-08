@@ -28,7 +28,7 @@
       src="https://kit.fontawesome.com/3cf5053bc7.js"
       crossorigin="anonymous"
     ></script> -->
-    <script src="scripts/myScript.js"></script>
+    <script src="/scripts/myScript.js"></script>
     <title>Friends | Kurtd Daniel</title>
   </head>
   <body>
@@ -46,11 +46,20 @@
               <li><a href="/index.html">Home</a></li>
               <li><a href="/html/education.html">Education</a></li>
               <li><a href="/html/awards-and-honors.html">Awards</a></li>
-              <li><a href="/html/friends.html">Friends</a></li>
+              <li><a class="active" href="/html/friends.html">Friends</a></li>
               <li><a href="/html/interests.html">Interests</a></li>
-              <li><span class="fa fa-moon"></span></li>
+              <li class="toggle">
+                <i class="fas fa-moon toggle-icon"></i>
+                <i class="fas fa-sun toggle-icon"></i>
+                <div class="toggle-ball"></div>
+              </li>
             </ul>
           </nav>
+        </div>
+        <div class="button btn-bars">
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
+          <div class="btn-line"></div>
         </div>
       </div>
     </header>

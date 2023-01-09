@@ -17,7 +17,7 @@ $(document).ready(function(){
         }
     });
 
-    $('.toggle-ball').click(function(){
+    $('.toggle-ball, .mobile-toggle-ball').click(function(){
         $(this).toggleClass('active');
     })  
 

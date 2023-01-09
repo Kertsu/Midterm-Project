@@ -93,11 +93,11 @@ ul{
 .toggle-ball{
     cursor: pointer;
     position: absolute;
-    right: 1px;
+    left: 1px;
     width: 50%;
     height: 96%;
     border-radius: 50%;
-    background-color: black;
+    background-color: #0779e4;
     transition: .25s;
 }
 
@@ -105,10 +105,43 @@ ul{
     color: var(--progress-bar);
 }
 
+/* MOBILE TOGGLE BALL */
+.mobile-toggle{
+    border-radius: 1rem ;
+    width: 4rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.158);
+    right: 35px;
+    top: 87.5%;
+}
+
+.mobile-toggle-ball{
+    cursor: pointer;
+    position: absolute;
+    left: 1px;
+    width: 50%;
+    height: 96%;
+    border-radius: 50%;
+    background-color: white;
+    transition: .25s;
+}
+
+.mobile-toggle-icon{
+    color: var(--progress-bar);
+}
+
+
 /* MOBILE NAV */
 .mobile-nav-ul{
     padding: 0;
+    position: relative;
 }
+
 
 .mobile-nav-a{
     color: white;
@@ -121,8 +154,23 @@ ul{
     text-decoration: none;
     font-size: 1rem;
     overflow: hidden;
+    cursor: pointer;
+}
+
+.mobile-nav-a:hover{
+    border:1px solid #0779e4;
+    box-shadow:1px 1px 10px #0779e4;
+}
+
+.mobile-theme-btn{
+    cursor: auto;
+}
+
+.mobile-theme-btn{
+    pointer-events: none !important;
 }
 .menu-div{
+    /* border: 1px solid rgba(255, 255, 255, 0.233); */
     height: 100%;
     z-index: 3;
     top: 0;
@@ -334,8 +382,13 @@ ul{
 
 /* ACTIVE */
 .toggle-ball.active{
-    transform: translateX(-98%);
-    background-color: #0779e4;
+    transform: translateX(98%);
+    background-color: black;
+}
+
+.mobile-toggle-ball.active{
+    transform: translateX(97%);
+    background-color: white;
 }
 
 .nav-wide li a.active{
@@ -344,6 +397,7 @@ ul{
 }
 
 
+/* FOOTER */
 
 /* MEDIA QUERIES */
 @media(min-width: 280px){
@@ -363,6 +417,8 @@ ul{
 
     .sec-1{
         gap: 2rem;
+        margin: 0 auto;
+        /* text-align: center; */
     }
 
 }
@@ -373,8 +429,9 @@ ul{
         margin: 0 auto;
     }
 
-
-
+    .sec-1{
+        text-align: left;
+    }
 
 }
 
@@ -431,6 +488,10 @@ ul{
 
 .sec1-col1-row2{
     grid-area: sec1-col1-row2;
+}
+
+.toggle-icon:first-child{
+    color: #000;
 }
 
 /* DARK THEME */

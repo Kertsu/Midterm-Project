@@ -1,7 +1,6 @@
 $(document).ready(function(){
     let showMenu = false;
     var totalHeight = 0;
-
     $('.header').each(function(){
         totalHeight += 30 + $(this).outerHeight() ;
     });
@@ -14,13 +13,15 @@ $(document).ready(function(){
             $('.header').removeClass('header-scrolled');
         } else{
            $('.header').addClass('header-scrolled');
+           
         }
     });
 
     $('.toggle-ball, .mobile-toggle-ball').click(function(){
         $('.toggle-ball').toggleClass('active');
         $('.mobile-toggle-ball').toggleClass('active');
-    })  
+        
+    });
 
     $('.btn-bars').click(function(){
         if(!showMenu){

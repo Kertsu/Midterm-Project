@@ -345,6 +345,10 @@ ul{
     "sec2-col1-row2";
 }
 
+.progress-wrap h3{
+    margin: .5rem 0;
+}
+
 .sec-2 div img{
     height: 100%;
     width: 100%;
@@ -352,7 +356,7 @@ ul{
 }
 
 .progress{
-    height: 1rem;
+    height: .5rem;
     background: rgba(0, 0, 0, 0.05);
     box-shadow: none;
     width: 100%;
@@ -360,7 +364,7 @@ ul{
 
 .progress-bar{
     background-color: var(--progress-bar);
-    height: 1rem;
+    height: .5rem;
     border-radius: 2px;
 }
 
@@ -455,6 +459,11 @@ ul{
         padding: 1rem 15px;
     }
 
+    .progress-wrap h3{
+        margin: 1.2rem 0;
+    }
+
+
 }
 
 @media (min-width: 576px) {
@@ -465,6 +474,14 @@ ul{
 
     .sec-1{
         text-align: left;
+    }
+
+    .progress{
+        height: 1rem;
+    }
+    
+    .progress-bar{
+        height: 1rem;
     }
 
 }

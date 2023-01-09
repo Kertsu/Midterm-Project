@@ -18,7 +18,8 @@ $(document).ready(function(){
     });
 
     $('.toggle-ball, .mobile-toggle-ball').click(function(){
-        $(this).toggleClass('active');
+        $('.toggle-ball').toggleClass('active');
+        $('.mobile-toggle-ball').toggleClass('active');
     })  
 
     $('.btn-bars').click(function(){

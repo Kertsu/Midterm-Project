@@ -38,10 +38,11 @@ $(document).ready(function(){
     })
 
     $('.mobile-body-dim').click(function(){
-        $('.btn-bars').removeClass('close')
+        $('.btn-bars').removeClass('close');
         $('.menu-div').removeClass('animate');
         $('body').css('overflow-y','visible');
         $('.mobile-body-dim').css('display', 'none');
         showMenu = false;
     })
+
 });

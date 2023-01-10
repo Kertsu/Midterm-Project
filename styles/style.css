@@ -49,6 +49,8 @@ body{
     font-family: 'Poppins', sans-serif;
     line-height: 2rem;
     background: #f8f8f8;
+    position: relative;
+    margin: 0;
 }
 
 
@@ -84,6 +86,14 @@ ul{
     font-size: 2rem;
 }
 
+.banner{
+    background-color: white;
+}
+
+.banner.blue{
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    color: white;
+}
 
 /* BUTTONS */
 
@@ -429,6 +439,12 @@ ul{
     font-size: 1.2rem;
 }
 
+/* .sec-5{
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    padding: 1rem;
+    color: white;
+} */
+
 /* FRIENDS */
 .friends-sec-1 h1{
     text-transform: uppercase;
@@ -472,6 +488,16 @@ ul{
 
 
 /* ACTIVE */
+
+.banner.dark{
+    background: #121212;
+}
+
+img.dark{
+    box-shadow: 0 0 1rem .1rem rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .btn-line.dark{
     background: white;
 }
@@ -518,6 +544,72 @@ body.dark{
 
 
 /* FOOTER */
+
+.banner._footer{
+    background: #04091e;
+}
+
+._footer div{
+    display: grid;
+    text-align: center;
+    color: white;
+    padding: 7rem 0;
+    gap: 1rem;
+}
+
+.footer-links{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.footer-links li a{
+    color: white;
+    font-size: 2rem;
+}
+
+.footer-links li a i{
+    transition: all .5s;
+}
+
+.footer-links li a i:hover{
+    transform: scale(1.4);
+}
+
+#to-Top{
+    color: black;
+    position: fixed;
+    right: 5vw;
+    bottom: 5vh;
+    z-index: 2;
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    opacity: .6;
+    display: none;
+    transition: display 7s;
+}
+
+#to-Top i{
+    animation: buttonMove .5s infinite;
+}
+
+@keyframes buttonMove{
+    0%{
+        transform: translateY(10%);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(10%);
+    }
+}
+
+#to-Top.button-scrolled{
+    display: block;
+}
 
 /* MEDIA QUERIES */
 @media(min-width: 280px){
@@ -611,7 +703,10 @@ body.dark{
     .info-holder li{
         grid-template-columns: 200px 1fr;
     }
-
+/* 
+    .sec-5{
+        padding: 3rem;
+    } */
 
 }
 

@@ -9,18 +9,27 @@ $(document).ready(function(){
     $('.sec-1, .awards-sec-1, .interests-sec-1, .educ-sec-1, .friends-sec-1').css('padding-top', totalHeight);
 
     $(window).scroll(function(){
+        if($(window).scrollTop() >= 1000){
+            $('#to-Top').addClass('button-scrolled');
+        } else{
+            $('#to-Top').removeClass('button-scrolled');
+        }
+    });
+
+
+    $(window).scroll(function(){
         if($(window).scrollTop() <= 0){
             $('.header').removeClass('header-scrolled');
         } else{
            $('.header').addClass('header-scrolled');
-           
         }
     });
+
 
     $('.toggle-ball, .mobile-toggle-ball').click(function(){
         $('.toggle-ball').toggleClass('active');
         $('.mobile-toggle-ball').toggleClass('active');
-        $('body, #header, .nav-wide li a, .menu-div, .mobile-nav-a, .btn-line').toggleClass('dark');
+        $('body, #header, .nav-wide li a, .menu-div, .mobile-nav-a, .btn-line, img, .banner').toggleClass('dark');
         
     });
 

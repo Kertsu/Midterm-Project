@@ -472,6 +472,31 @@ ul{
 
 
 /* ACTIVE */
+.btn-line.dark{
+    background: white;
+}
+
+.mobile-nav-a.dark{
+    color: black;
+}
+
+.menu-div.dark{
+    background: #f8f8f8;
+}
+
+#header.dark{
+    background: #181818;
+}
+
+body.dark{
+    background: #121212;
+    color: white;
+}
+
+.nav-wide li a.dark{
+    color: white;
+}
+
 .mobile-nav-a.active{
     color: #8490ff;
     font-weight: bold;

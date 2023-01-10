@@ -259,7 +259,9 @@ ul{
 
 .header-logo{
     font-size: 1.75rem;
-    color: var(--logo-color);
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     font-weight: bold;
 }
 
@@ -584,37 +586,56 @@ body.dark{
 
 
 /* FOOTER */
+.footer{
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+}
 
 ._footer{
     background: #04091e;
+    color: white;
+    padding: 2rem 0;
 }
 
-._footer div{
-    display: grid;
-    text-align: center;
-    color: white;
-    padding: 7rem 0;
-    gap: 1rem;
+footer .container div h3, p{
+    padding: 0;
+    margin: 0;
+}
+
+footer .container div h3{
+    font-weight: 400;
+}
+
+footer .container div p{
+    font-weight: 300;
+    color: #777777;
 }
 
 .footer-links{
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* display: grid;
+    grid-template-columns: repeat(6, 1fr); */
 }
 
 .footer-links li a{
     color: white;
-    font-size: 2rem;
 }
 
-.footer-links li a i{
-    transition: all .5s;
+.footer-links li a:hover{
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
-.footer-links li a i:hover{
-    transform: scale(1.4);
+.name{
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 #to-Top{
@@ -702,10 +723,6 @@ body.dark{
         height: 1rem;
     }
 
-    ._footer div{
-        padding: 2rem 0;
-    }
-
 }
 
 @media (min-width: 768px) {
@@ -750,6 +767,10 @@ body.dark{
 
     .offers-wrapper{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer{
+        grid-template-columns: repeat(2,1fr);
     }
 
 /* 

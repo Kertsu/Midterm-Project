@@ -258,7 +258,7 @@ ul{
     cursor: pointer;
     margin: 1.45rem 0;
     position: fixed;
-    right: 20px;
+    right: 25px;
 }
 
 .btn-bars .btn-line{
@@ -523,7 +523,8 @@ body.dark{
 @media(min-width: 280px){
     .container{
         max-width: 330px;
-        padding: 1rem 15px;
+        padding: 1rem 0;
+        margin: 0 auto;
     }
 
     .sec-1{

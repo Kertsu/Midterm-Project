@@ -399,13 +399,15 @@ ul{
 
 .subheading,
 .info-key + span{
-    color: #0779e4;
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     font-weight: bold;
     font-size: 1.05rem;
 }
 
 .sec-3 div p{
-    opacity: .8;
+    opacity: .7;
 }
 
 .info-key{
@@ -428,7 +430,6 @@ ul{
     display: grid;
     text-align: center;
     gap: 1rem;
-    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
     color: white;
     margin: 0 auto;
     padding: 1rem;
@@ -444,6 +445,41 @@ ul{
     padding: 1rem;
     color: white;
 } */
+
+.sec-6{
+    text-align: center;
+    display: grid;
+    gap: 3rem;
+}
+
+.sec-6 div h2{
+    font-size: 2rem;
+}
+
+.sec-6 div p{
+    opacity: .7;
+}
+
+.sec-6 div i{
+    font-size: 2rem;
+}
+
+.offers-wrapper{
+    display: grid;
+    gap: 2rem;
+}
+
+.offers-wrapper > div{
+    padding: 1rem;
+}
+
+.offers-wrapper > div:hover i,
+.offers-wrapper > div:hover h3
+{
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
 
 /* FRIENDS */
 .friends-sec-1 h1{
@@ -542,10 +578,14 @@ body.dark{
     color: #8490ff;
 }
 
+.offers-wrapper > div.dark{
+    border: 1px solid rgba(255, 255, 255, 0.479);
+}
+
 
 /* FOOTER */
 
-.banner._footer{
+._footer{
     background: #04091e;
 }
 
@@ -662,6 +702,10 @@ body.dark{
         height: 1rem;
     }
 
+    ._footer div{
+        padding: 2rem 0;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -703,6 +747,11 @@ body.dark{
     .info-holder li{
         grid-template-columns: 200px 1fr;
     }
+
+    .offers-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 /* 
     .sec-5{
         padding: 3rem;
@@ -731,6 +780,11 @@ body.dark{
         gap: 1rem;
     }
 
+    
+    .offers-wrapper{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 
 } 
 
@@ -741,7 +795,7 @@ body.dark{
 
     .text,
     .icon{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 } 
 

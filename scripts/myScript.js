@@ -29,7 +29,7 @@ $(document).ready(function(){
     $('.toggle-ball, .mobile-toggle-ball').click(function(){
         $('.toggle-ball').toggleClass('active');
         $('.mobile-toggle-ball').toggleClass('active');
-        $('body, #header, .nav-wide li a, .menu-div, .mobile-nav-a, .btn-line, img, .banner').toggleClass('dark');
+        $('body, #header, .nav-wide li a, .menu-div, .mobile-nav-a, .btn-line, img, .banner, .offers-wrapper > div').toggleClass('dark');
         
     });
 

@@ -122,6 +122,7 @@ ul{
     transition: .25s;
 }
 
+
 .toggle-icon{
     color: var(--progress-bar);
 }
@@ -442,11 +443,9 @@ ul{
     font-size: 1.2rem;
 }
 
-/* .sec-5{
-    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-    padding: 1rem;
-    color: white;
-} */
+.caption{
+    font-weight: 300;
+}
 
 .sec-6{
     text-align: center;
@@ -837,4 +836,3 @@ footer .container div p{
     color: #000;
 }
 
-/* DARK THEME */

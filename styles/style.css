@@ -482,6 +482,29 @@ ul{
     -webkit-background-clip: text;
 }
 
+/* EDUC */
+.educ-sec-1{
+    text-align: center;
+}
+
+.educ-sec-2{
+    display: grid;
+    gap: 1rem;
+}
+
+.timeline{
+    text-align: center;
+}
+
+.timeline h2{
+    font-size: 2rem;
+}
+
+.timeline p{
+    opacity: .7;
+}
+
+
 /* FRIENDS */
 .friends-sec-1 h1{
     text-transform: uppercase;

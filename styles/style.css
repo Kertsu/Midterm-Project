@@ -377,7 +377,7 @@ ul{
 }
 
 .progress-bar{
-    background-color: #8490ff;
+    background: linear-gradient(to left, #8490ff 0%, #62bdfc 100%);
     height: .5rem;
     border-radius: 2px;
     transition: all .7s;
@@ -504,6 +504,116 @@ ul{
     opacity: .7;
 }
 
+.educ-sec-2 ul{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+
+.educ-sec-2 ul li .content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: none;
+}
+
+.educ-sec-2 ul li .content{
+    background-color: white !important;
+    box-shadow: 0px 10px 27px 3px rgb(204 204 204 / 20%);
+    position: relative;
+    padding: 30px;
+    color: black;
+}
+
+.educ-sec-3{
+    display: grid;
+    gap: 2rem;
+}
+
+.testimonies{
+    text-align: center;
+}
+
+.testimonies p{
+    opacity: .7;
+}
+
+.testimonies h2{
+    font-size: 2rem;
+}
+
+
+.testimonies-content{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    transition: all .7s;
+}
+.testimonies-content h4{
+    transition: all 0.3s ease 0s;
+}
+
+.testimonies-content:hover h4{
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.testimonies-content:hover p:nth-child(3){
+    color: black;
+    font-weight: 400;
+}
+
+
+
+.testimonies-content p{
+    color: #777777;
+    font-weight: 300;
+    font-size: .9rem;
+    line-height: 1.25rem;
+}
+
+.testimonies ~ div{
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.thumb img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    box-shadow: none;
+    border-radius: 50%;
+}
+
+.thumb{
+    /* border: 1px solid yellow; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+.description{
+    /* border: 1px solid red; */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.description p{
+    margin: 0;
+    width: 95%;
+}
+
+.description h4{
+    margin: .5rem 0;
+}
 
 /* FRIENDS */
 .friends-sec-1 h1{
@@ -548,6 +658,27 @@ ul{
 
 
 /* ACTIVE */
+
+.testimonies-content h4.dark,
+.testimonies-content p:nth-child(3).dark
+{
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.educ-sec-2 ul li .content.dark{
+    background: #121212 !important;
+    box-shadow: 0px 0px 5px 3px rgb(204 204 204 / 20%);
+    position: relative;
+    border: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    padding: 30px;
+    color: #f8f8f8;
+}
+
+.educ-sec-2 ul li .content p.dark{
+    opacity: .7;
+}
 
 .banner.dark{
     background: #121212;
@@ -711,6 +842,13 @@ footer .container div p{
         gap: 2rem;
     }
 
+    .educ-sec-2{
+        padding-bottom: 7rem;
+    }
+    .educ-sec-3{
+        padding-bottom: 5rem;
+    }
+
 
 }
 
@@ -724,6 +862,10 @@ footer .container div p{
         margin: 1.2rem 0;
     }
 
+    .educ-sec-2,
+    .educ-sec-3{
+        padding-bottom: 7rem;
+    }
 
 }
 
@@ -743,6 +885,15 @@ footer .container div p{
     
     .progress-bar{
         height: 1rem;
+    }
+
+    .educ-sec-2, .educ-sec-3{
+        padding-bottom: 7rem;
+    }
+
+    .testimonies ~ div{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
 
 }
@@ -800,6 +951,11 @@ footer .container div p{
         padding: 3rem;
     } */
 
+    .educ-sec-2, .educ-sec-3{
+        padding-bottom: 7rem;
+    }
+
+
 }
 
 @media (min-width: 992px){
@@ -828,6 +984,14 @@ footer .container div p{
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .educ-sec-2, .educ-sec-3{
+        padding-bottom: 7rem;
+    }
+
+    .testimonies ~ div{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 
 } 
 
@@ -839,6 +1003,19 @@ footer .container div p{
     .text,
     .icon{
         font-size: 1.5rem;
+    }
+
+    .educ-sec-2 ul li .content{
+        height: calc(100% - 75px);
+    }
+
+
+    .educ-sec-2 ul{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .educ-sec-2, .educ-sec-3{
+        padding-bottom: 7rem;
     }
 } 
 
@@ -858,4 +1035,3 @@ footer .container div p{
 .toggle-icon:first-child{
     color: #000;
 }
-

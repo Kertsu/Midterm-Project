@@ -1017,6 +1017,10 @@ footer .container div p{
     .educ-sec-2, .educ-sec-3{
         padding-bottom: 7rem;
     }
+
+    .educ-sec-3{
+        padding-top: 75px;
+    }
 } 
 
 .sec1-col1-row2{

@@ -550,6 +550,7 @@ ul{
     background-color: white;
     display: flex;
     transition: all .7s;
+    border-radius: 5px;
 }
 .testimonies-content h4{
     transition: all 0.3s ease 0s;
@@ -641,20 +642,145 @@ ul{
 
 /* AWARDS */
 .awards-sec-1{
-    position:relative;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/me2.jpg");
-    background: center cover;
-}
-
-.awards-sec-1 > div{
-    padding: 1rem 0;
-    color: white;
     text-align: center;
 }
 
-.awards-sec-1 > div p:nth-child(3), h1{
-    text-transform: uppercase;    
+.achievement-title{
+    text-align: center;
 }
+
+.achievement-title h2{
+    font-size: 2rem;
+}
+
+.achievement-title p{
+    padding: 1rem 0;
+    opacity: .7;
+}
+
+.shrug{
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.awards-sec-2{
+    display: grid;
+    gap: 2rem;
+}
+
+.card-holder{
+    display: grid;
+    gap: 2rem;
+}
+
+.card{
+    padding: 1rem;
+    background: linear-gradient(to top, #8490ff 0%, #62bdfc 100%);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.card > div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    box-shadow: none;
+    border: 2px solid #e4f6ff ;
+}
+
+.awards-sec-3 h2{
+    font-size: 2rem;
+}
+
+.achievements-timeline{
+    text-align: center;
+}
+
+.achievements-timeline p{
+    opacity: .7;
+}
+
+.achievements-holder ul{
+    max-width: 460px ;
+    margin: auto ;
+    position: relative ;
+    padding: 40px 0;
+}
+
+.achievements-holder ul::before{
+    content: "";
+    height: 93%;
+    width: 5px;
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    top: 5px;
+}
+
+.achievements-holder ul li{
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.achievements-holder ul li span{
+    height: 15px;
+    width: 15px;
+    display: block;
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    top: 23px;
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.achievements-holder ul li span::before{
+    content: '';
+    height: 7px;
+    width: 7px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 4px;
+    transform: translateX(-50%);
+}
+
+.timeline-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.d-flex{
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.wrapper-body{
+    width: 50%;
+    background:white;
+    box-shadow: 0px 10px 27px 3px rgb(204 204 204 / 20%);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: all .5s;
+    text-align: center;
+}
+
+.wrapper-body p{
+    opacity: .7;
+}
+
+
 
 
 /* ACTIVE */
@@ -736,6 +862,12 @@ body.dark{
 .offers-wrapper > div.dark{
     border: 1px solid rgba(255, 255, 255, 0.479);
 }
+
+.wrapper-body.dark{
+    background: white;
+    color: black;
+}
+
 
 
 /* FOOTER */
@@ -896,6 +1028,12 @@ footer .container div p{
         grid-template-rows: repeat(2, 1fr);
     }
 
+    .awards-sec-2{
+        padding-bottom: 5rem;
+    }
+
+
+
 }
 
 @media (min-width: 768px) {
@@ -946,16 +1084,107 @@ footer .container div p{
         grid-template-columns: repeat(2,1fr);
     }
 
-/* 
-    .sec-5{
-        padding: 3rem;
-    } */
-
     .educ-sec-2, .educ-sec-3{
         padding-bottom: 7rem;
     }
 
+    .card{
+        background: #f9f9ff;
+        color: black;
+        transition: all .4s;
+    }
 
+    .card:hover{
+        transform: scale(1.05);
+        padding: 1rem;
+        background: linear-gradient(to top, #8490ff 0%, #62bdfc 100%);
+        border-radius: 5px;
+        color: #fff;
+    }
+
+    .card-holder{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .achievements-holder ul{
+        max-width: 460px ;
+        margin: auto ;
+        position: relative ;
+        padding-top: 40px ;
+        padding-bottom: 40px ;
+    }
+    
+    .achievements-holder ul::before{
+        content: "";
+        height: 93%;
+        width: 5px;
+        background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+        position: absolute;
+        left: 40%;
+        transform: translateX(-50%);
+        top: 5px;
+    }
+    
+    .achievements-holder ul li{
+        margin-bottom: 60px;
+        position: relative;
+    }
+    
+    .achievements-holder ul li span{
+        height: 15px;
+        width: 15px;
+        display: block;
+        background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+        top: 30px;
+        position: absolute;
+        left: 40%;
+       transform: translateX(-50%);
+    }
+    
+    .achievements-holder ul li span::before{
+        content: '';
+        height: 7px;
+        width: 7px;
+        background: #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: 53.5%;
+        top: 4px;
+        transform: translateX(-50%);
+    }
+    
+    .timeline-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .d-flex{
+        width: 50%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .wrapper-body{
+        width: 50%;
+        background:white;
+        box-shadow: 0px 10px 27px 3px rgb(204 204 204 / 20%);
+        padding: 1rem;
+        padding-top: 0;
+        border-radius: 5px;
+        transition: all .5s;
+    }
+
+    .wrapper-body p{
+        opacity: .7;
+    }
+
+    .wrapper-body:hover{
+        transform: scale(1.05);
+        background: linear-gradient(to top, #8490ff 0%, #62bdfc 100%);
+        color: #fff;
+    }
 }
 
 @media (min-width: 992px){

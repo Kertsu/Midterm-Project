@@ -204,7 +204,7 @@ ul{
     overflow-x: hidden;
     width: 0;
     padding-top: 1px;
-    transition: all .7s;
+    transition: all .5s;
 }
 
 .menu-div.animate{
@@ -229,7 +229,7 @@ ul{
     color: #000;
     font-size: .85rem;
     text-transform: uppercase;
-    transition: color .2s;
+    transition: color .5s;
 }
 
 .nav-wide li a:hover{
@@ -249,7 +249,6 @@ ul{
     top: 0;
     right: 0;
     left: 0;
-    transition: all .5s;
     background: #fff;
     z-index: 2;
 }
@@ -715,7 +714,7 @@ ul{
 
 .achievements-holder ul::before{
     content: "";
-    height: 93%;
+    height: 95%;
     width: 5px;
     background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
     position: absolute;

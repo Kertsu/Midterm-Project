@@ -714,9 +714,8 @@ ul{
 
 
 /* INTERESTS */
-.interests-sec-1 img{
-    width: 100%;
-    max-width: 100%;
+.interests-sec-1{
+    text-align: center;
 }
 
 .nen-ability-holder{
@@ -730,6 +729,13 @@ ul{
     background-color: var(--nen-scale);
     height: .6rem;
     border-radius: 2px;
+}
+
+.interests-sec-2{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* AWARDS */

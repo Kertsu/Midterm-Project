@@ -1274,8 +1274,14 @@ footer .container div p{
     }
 
     .friends-sec-2{
-        
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .friends-cards{
+        transition: all .5s;
+    }
+    .friends-cards:hover{
+        transform: scale(1.05);
     }
 
 }
@@ -1345,10 +1351,10 @@ footer .container div p{
     }
 
     
-    .friends-sec-2{
+    /* .friends-sec-2{
         
         grid-template-columns: repeat(4, 1fr);
-    }
+    } */
 
     
 } 

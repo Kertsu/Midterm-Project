@@ -29,7 +29,7 @@ $(document).ready(function(){
     $('.toggle-ball, .mobile-toggle-ball').click(function(){
         $('.toggle-ball').toggleClass('active');
         $('.mobile-toggle-ball').toggleClass('active');
-        $('body, #header, .nav-wide li a, .menu-div, .mobile-nav-a, .btn-line, img, .banner, .offers-wrapper > div, .educ-sec-2 ul li .content, .educ-sec-2 ul li .content p, .testimonies-content h4, .testimonies-content p:nth-child(3), .wrapper-body, .friends-sec-2 img').toggleClass('dark');
+        $('body, #header, .nav-wide li a, .menu-div, .mobile-nav-a, .btn-line, img, .banner, .offers-wrapper > div, .educ-sec-2 ul li .content, .educ-sec-2 ul li .content p, .testimonies-content h4, .testimonies-content p:nth-child(3), .wrapper-body, .friends-sec-2 img, .interests-cards, .interests-image-holder:not(.interests-sec-2 .interests-image-holder) img, .interests-cards, .interests-text-holder p:nth-child(3)').toggleClass('dark');
         
     });
 

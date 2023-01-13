@@ -1448,10 +1448,10 @@ footer .container div p{
         grid-template-columns: 200px 150px 1fr;
         gap: 1rem;
     }
-
     .interests-image-holder:not(.interests-sec-2 .interests-image-holder){
         height: 100%;
         width: 100%;
+        background: none !important;
     }
     .interests-image-holder:not(.interests-sec-2 .interests-image-holder) img{
         position: initial;

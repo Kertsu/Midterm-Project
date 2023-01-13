@@ -620,6 +620,99 @@ ul{
     text-transform: uppercase;
 }
 
+.friends-sec-1{
+    text-align: center;
+}
+
+.friends-sec-2 img{
+    box-shadow: none;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid white;
+}
+
+.friends-sec-2{
+    display: grid;
+    gap: 2rem;
+}
+
+.friends-sec-2 img.dark{
+    box-shadow: none;
+}
+
+.friends-cards{
+    background: #f9f9ff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    transition: scale .7s;
+}
+
+.friends-cards div:nth-child(2){
+    text-align: center;
+}
+
+
+.friends-cards div:nth-child(2) ul{
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.friends-cards div:nth-child(2) ul li a{
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 1.125rem;
+}
+
+/* .friends-sec-2 .friends-cards:first-child div img,
+.friends-sec-2 .friends-cards:nth-child(7) div img{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: initial;
+    object-fit: cover;
+}
+
+.friends-sec-2 .friends-cards:first-child div ,
+.friends-sec-2 .friends-cards:nth-child(7) div {
+    height: auto;
+} */
+
+.text-holder{
+    color: #181818;
+    padding: 4rem 1rem 1rem 1rem;
+}
+
+.text-holder h2{
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.image-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    height: 130px;
+    position: relative;
+}
+
+/* .image-holder:not(.friends-cards:first-child .image-holder, .friends-cards:nth-child(7) .image-holder) img{
+    position: absolute;
+    bottom: -50%;
+} */
+ .image-holder img{
+    position: absolute;
+    bottom: -50%;
+} 
+
+
 /* INTERESTS */
 .interests-sec-1 img{
     width: 100%;
@@ -779,9 +872,6 @@ ul{
     opacity: .7;
 }
 
-
-
-
 /* ACTIVE */
 
 .testimonies-content h4.dark,
@@ -902,8 +992,6 @@ footer .container div p{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    /* display: grid;
-    grid-template-columns: repeat(6, 1fr); */
 }
 
 .footer-links li a{
@@ -1184,6 +1272,12 @@ footer .container div p{
         background: linear-gradient(to top, #8490ff 0%, #62bdfc 100%);
         color: #fff;
     }
+
+    .friends-sec-2{
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media (min-width: 992px){
@@ -1249,6 +1343,14 @@ footer .container div p{
     .educ-sec-3{
         padding-top: 75px;
     }
+
+    
+    .friends-sec-2{
+        
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    
 } 
 
 .sec1-col1-row2{

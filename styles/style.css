@@ -1200,8 +1200,6 @@ footer .container div p{
         padding-bottom: 5rem;
     }
 
-
-
 }
 
 @media (min-width: 768px) {
@@ -1365,6 +1363,11 @@ footer .container div p{
         transform: scale(1.05);
     }
 
+    .text-holder{
+        display: grid;
+        grid-template-rows: 70px 250px 50px;
+    }
+
 }
 
 @media (min-width: 992px){
@@ -1405,8 +1408,11 @@ footer .container div p{
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
     }
-
    
+    .text-holder{
+        display: grid;
+        grid-template-rows: 70px 200px 50px;
+    }
 
 } 
 
@@ -1481,8 +1487,11 @@ footer .container div p{
         grid-column: 2;
         grid-row: 1;
     }
-
     
+    .text-holder{
+        display: grid;
+        grid-template-rows: 70px 165px 50px;
+    }
 } 
 
 .sec1-col1-row2{

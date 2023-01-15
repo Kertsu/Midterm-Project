@@ -1,6 +1,14 @@
 $(document).ready(function(){
     let showMenu = false;
     var totalHeight = 0;
+    dark = false;
+
+    if (localStorage.getItem('darkMode') === null){
+        localStorage.setItem('darkMode', 'false');
+    } 
+
+    changeTheme()
+
     $('.header').each(function(){
         totalHeight += 30 + $(this).outerHeight() ;
     });
@@ -25,12 +33,17 @@ $(document).ready(function(){
         }
     });
 
-
     $('.toggle-ball, .mobile-toggle-ball').click(function(){
-        $('.toggle-ball').toggleClass('active');
-        $('.mobile-toggle-ball').toggleClass('active');
-        $('body, #header, .nav-wide li a, .menu-div, .mobile-nav-a, .btn-line, img, .banner, .offers-wrapper > div, .educ-sec-2 ul li .content, .educ-sec-2 ul li .content p, .testimonies-content h4, .testimonies-content p:nth-child(3), .wrapper-body, .friends-sec-2 img, .interests-cards, .interests-image-holder:not(.interests-sec-2 .interests-image-holder) img, .interests-cards, .interests-text-holder p:nth-child(3)').toggleClass('dark');
-        
+        if (!dark){
+            dark = true;
+            localStorage.setItem('darkMode', 'true');
+            changeTheme()
+            
+        }else{
+            localStorage.setItem('darkMode', 'false');
+            dark = false;
+            changeTheme()
+        }
     });
 
     $('.btn-bars').click(function(){
@@ -58,3 +71,15 @@ $(document).ready(function(){
     })
 
 });
+
+function changeTheme(){
+    if (localStorage.getItem('darkMode') === 'true'){
+        $('.toggle-ball').addClass('active');
+        $('.mobile-toggle-ball').addClass('active');
+        $('body, #header, .nav-wide li a, .menu-div, .mobile-nav-a, .btn-line, img, .banner, .offers-wrapper > div, .educ-sec-2 ul li .content, .educ-sec-2 ul li .content p, .testimonies-content h4, .testimonies-content p:nth-child(3), .wrapper-body, .friends-sec-2 img, .interests-cards, .interests-image-holder:not(.interests-sec-2 .interests-image-holder) img, .interests-cards, .interests-text-holder p:nth-child(3)').addClass('dark');
+    } else{
+        $('.toggle-ball').removeClass('active');
+        $('.mobile-toggle-ball').removeClass('active');
+        $('body, #header, .nav-wide li a, .menu-div, .mobile-nav-a, .btn-line, img, .banner, .offers-wrapper > div, .educ-sec-2 ul li .content, .educ-sec-2 ul li .content p, .testimonies-content h4, .testimonies-content p:nth-child(3), .wrapper-body, .friends-sec-2 img, .interests-cards, .interests-image-holder:not(.interests-sec-2 .interests-image-holder) img, .interests-cards, .interests-text-holder p:nth-child(3)').removeClass('dark');
+    }
+}

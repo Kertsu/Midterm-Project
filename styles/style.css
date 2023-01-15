@@ -1,23 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
-
-/* colors */
-
-
-:root{
-    --progress-bar: #0779e4;
-    --nen-scale: #cc2fef;
-    --text-light-mode: #2b2b2b;
-    --text-dark-mode: #f8f8f8 ;
-    --logo-color:#1792d2;
-    /* color:#143774;
-    color:#f8f8f8;
-    color:#707070;
-    color:#8490ff; */
-
-    /* dark mode */
-    /* background-color : #09141d;  */
-}
-
 /* GLOBAL */
 .container{
     width: 100%;
@@ -124,7 +105,7 @@ ul{
 
 
 .toggle-icon{
-    color: var(--progress-bar);
+    color:  #0779e4;
 }
 
 /* MOBILE TOGGLE BALL */
@@ -154,7 +135,7 @@ ul{
 }
 
 .mobile-toggle-icon{
-    color: var(--progress-bar);
+    color:  #0779e4;
 }
 
 
@@ -727,7 +708,7 @@ ul{
 }
 
 .nen-ability-scale{
-    background-color: var(--nen-scale);
+    background-color: #cc2fef;
     height: .6rem;
     border-radius: 2px;
 }
@@ -1368,6 +1349,14 @@ footer .container div p{
         grid-template-rows: 70px 250px 50px;
     }
 
+}
+
+@media (min-height: 1000px) {
+    .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 }
 
 @media (min-width: 992px){
